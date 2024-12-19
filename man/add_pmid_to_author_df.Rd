@@ -25,6 +25,5 @@ lapply(function(x){lapply(x, author_as_df) } ) |>
 lapply(function(x) do.call(rbind, x))
 
 coauthors_df <- base::Map(f = add_pmid_to_author_df, list_of_author_pubs, as.list(pmids)) |>
-do.call(what = "rbind") |>
-subset(full_name != clean_author_name)
+do.call(what = "rbind")
 }

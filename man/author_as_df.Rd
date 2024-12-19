@@ -16,7 +16,7 @@ A dataframe with the first, last and full name of the author, and their affiliat
 Make a data frame with the information of an author from a publication retrieved from Entrez
 }
 \examples{
-#' pmids <- get_pmids("Benjamin Valderrama")
+pmids <- get_pmids("Benjamin Valderrama")
 pmid <- pmids[1]
 
 authors <- get_authors_node(pmid)

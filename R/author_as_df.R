@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' #' pmids <- get_pmids("Benjamin Valderrama")
+#' pmids <- get_pmids("Benjamin Valderrama")
 #' pmid <- pmids[1]
 #'
 #' authors <- get_authors_node(pmid)

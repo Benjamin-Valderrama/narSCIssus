@@ -7,12 +7,9 @@
 #'
 #' @examples
 #' pmids <- get_pmids("Benjamin Valderrama")
-#' pmid <- pmids[1]
 #'
-#' authors <- get_authors_node(pmid)
-#' author <- authors[1]
-#'
-#' author_as_df(author)
+#' list_of_author_pubs <- lapply(pmids, get_authors_node) |>
+#' lapply(function(x){lapply(x, author_as_df) } )
 author_as_df <- function(author){
 
         last_name <-  XML::xpathSApply(author, ".//LastName", XML::xmlValue)

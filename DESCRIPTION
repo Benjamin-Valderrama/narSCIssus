@@ -13,3 +13,6 @@ Imports:
     rentrez,
     scholar,
     XML
+Depends: 
+    R (>= 2.10)
+LazyData: true

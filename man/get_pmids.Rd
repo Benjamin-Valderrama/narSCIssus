@@ -7,7 +7,7 @@
 get_pmids(search_term)
 }
 \arguments{
-\item{search_term}{}
+\item{search_term}{A character vector in the same shape as queries used in entrez with the name of an author}
 }
 \value{
 A list with all the PMID's associated to the author available in pubmed

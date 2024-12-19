@@ -8,6 +8,7 @@
 #'
 #' @examples
 #' pmids <- get_pmids("Benjamin Valderrama")
+#'
 #' list_of_author_pubs <- lapply(pmids, get_authors_node) |>
 #' lapply(function(x){lapply(x, author_as_df) } ) |>
 #' lapply(function(x) do.call(rbind, x))

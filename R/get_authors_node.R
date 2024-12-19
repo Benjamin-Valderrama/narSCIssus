@@ -21,4 +21,6 @@ get_authors_node <- function(pmid){
         # XMLNodeSet of the article authors
         authors <- XML::getNodeSet(xml_parsed, "//Author")
 
+        return(authors)
+
 }

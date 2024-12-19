@@ -8,14 +8,13 @@
 #'
 #' @examples
 #' pmids <- get_pmids("Benjamin Valderrama")
-#' pmid <- pmids[1]
+#' list_of_author_pubs <- lapply(pmids, get_authors_node) |>
+#' lapply(function(x){lapply(x, author_as_df) } ) |>
+#' lapply(function(x) do.call(rbind, x))
 #'
-#' authors <- get_authors_node(pmid)
-#' author <- authors[1]
-#'
-#' author_df <- author_as_df(author)
-#'
-#' add_pmid_to_author_df(author_df, pmid)
+#' coauthors_df <- base::Map(f = add_pmid_to_author_df, list_of_author_pubs, as.list(pmids)) |>
+#' do.call(what = "rbind") |>
+#' subset(full_name != clean_author_name)
 add_pmid_to_author_df <- function(author_df, pmid){
 
         author_df$PMID <- pmid

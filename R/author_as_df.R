@@ -1,9 +1,9 @@
 author_as_df <- function(author){
 
-        last_name <-  XML::xpathSApply(author, ".//LastName", xmlValue)
-        first_name <-  XML::xpathSApply(author, ".//ForeName", xmlValue)
+        last_name <-  XML::xpathSApply(author, ".//LastName", XML::xmlValue)
+        first_name <-  XML::xpathSApply(author, ".//ForeName", XML::xmlValue)
         full_name <- paste(first_name, last_name)
-        affiliations <- XML::xpathSApply(author, ".//AffiliationInfo/Affiliation", xmlValue)
+        affiliations <- XML::xpathSApply(author, ".//AffiliationInfo/Affiliation", XML::xmlValue)
 
         # Handle missing affiliations
         if (length(affiliations) == 0){ affiliations <- NA }

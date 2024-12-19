@@ -17,10 +17,7 @@ Make a data frame with the information of an author from a publication retrieved
 }
 \examples{
 pmids <- get_pmids("Benjamin Valderrama")
-pmid <- pmids[1]
 
-authors <- get_authors_node(pmid)
-author <- authors[1]
-
-author_as_df(author)
+list_of_author_pubs <- lapply(pmids, get_authors_node) |>
+lapply(function(x){lapply(x, author_as_df) } )
 }

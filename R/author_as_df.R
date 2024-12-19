@@ -1,3 +1,18 @@
+#' Make a data frame with the information of an author from a publication retrieved from Entrez
+#'
+#' @param author A XML node with the information of an author from a paper
+#'
+#' @return A dataframe with the first, last and full name of the author, and their affiliation
+#' @export
+#'
+#' @examples
+#' #' pmids <- get_pmids("Benjamin Valderrama")
+#' pmid <- pmids[1]
+#'
+#' authors <- get_authors_node(pmid)
+#' author <- authors[1]
+#'
+#' author_as_df(author)
 author_as_df <- function(author){
 
         last_name <-  XML::xpathSApply(author, ".//LastName", XML::xmlValue)

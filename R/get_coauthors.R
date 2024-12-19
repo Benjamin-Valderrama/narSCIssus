@@ -1,3 +1,12 @@
+#' Get coauthors of an author of interest
+#'
+#' @param search_term A character vector in the same shape as queries used in entrez with the name of an author
+#'
+#' @return a data frame with the information of the coauthors of each paper published by the author of interest
+#' @export
+#'
+#' @examples
+#' get_coauthors("Benjamin Valderrama[AU]")
 get_coauthors <- function(search_term){
 
         # Extract the author name from the search term

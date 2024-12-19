@@ -15,4 +15,3 @@ author_gs_profile <- function(search_term){
         return(author_gs_profile)
 
 }
-|>

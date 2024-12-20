@@ -12,6 +12,7 @@ RoxygenNote: 7.3.2
 Imports: 
     rentrez,
     scholar,
+    stringr,
     XML
 Depends: 
     R (>= 2.10)

@@ -33,18 +33,20 @@ devtools::install_github("Benjamin-Valderrama/narSCIssus")
 
 Since narSCIssus uses information from PubMed, you can use advanced queries supported by [Entrez](https://www.ncbi.nlm.nih.gov/books/NBK3837/) to filter other researchers with your exact (or similar) name.
 
-In this example, I use my name followed by '[AU]' and the keyword 'microbiome' to retrieve all PubMed publications where Benjamin Valderrama is listed as an author and contain the word microbiome.
+In this example, I use my name followed by the Mesh Term 'AU' and the keyword 'microbiome' to retrieve all PubMed publications where Benjamin Valderrama is listed as an author and contain the word microbiome.
 
-```{r example1}
+```{r example1, fig.width=12, fig.height=7, fig.align='center', echo=TRUE}
 library(narSCIssus)
 make_business_card("Benjamin Valderrama[AU] microbiome")
 ```
 
 However, simpler queries can be made. For instace, you could use just your name
-```{r example2}
+```{r example2, fig.width=12, fig.height=7, fig.align='center', echo=TRUE}
 library(narSCIssus)
-make_business_card("Benjamin Valderrama[AU] microbiome")
+make_business_card("Benjamin Valderrama")
 ```
+
+Additionally, notice that by removing the keyword 'microbiome' from the second search, a paper published by the author Benjamin Valderrama that wasn't about the topic 'microbiome' was included. This examples shows that (similar but) different search terms may produce discrepant results, thus users should be use search terms with caution.
 
 ## Further development
 

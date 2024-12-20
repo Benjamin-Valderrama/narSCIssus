@@ -6,4 +6,4 @@
 .quarto
 
 # Ignore the folder where I test package final output
-.business_card/
+business_card/

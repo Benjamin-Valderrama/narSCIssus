@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param affiliation
+#'
+#' @return
+#' @export
+#'
+#' @examples
 format_affiliations <- function(affiliation){
 
         if(grepl(x = affiliation, pattern = ";")){

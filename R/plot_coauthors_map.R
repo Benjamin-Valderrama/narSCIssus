@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param coauthors_df
+#'
+#' @return
+#' @export
+#'
+#' @examples
 plot_coauthors_map <- function(coauthors_df){
 
         # add country

@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param search_term
+#'
+#' @return
+#' @export
+#'
+#' @examples
 make_business_card <- function(search_term){
 
         # Get coauthors and their countries

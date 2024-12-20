@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param fields
+#'
+#' @return
+#' @export
+#'
+#' @examples
 format_fields <- function(fields){
 
         # Format fields for plotting

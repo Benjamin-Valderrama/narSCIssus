@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param search_term
+#'
+#' @return
+#' @export
+#'
+#' @examples
 businesscard_text <- function(search_term){
 
         gs <- author_gs_profile(search_term)

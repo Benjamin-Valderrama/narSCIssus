@@ -1,3 +1,11 @@
+#' Title
+#'
+#' @param business_card_text
+#'
+#' @return
+#' @export
+#'
+#' @examples
 plot_businesscard_text <- function(business_card_text){
 
 

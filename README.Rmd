@@ -54,3 +54,4 @@ I wrote narSCIssus during my holidays as an small experiment. However, I do want
 
 * Make shiny app for narSCIssus
 * Allow users to provide affiliations to narrow down ambiguous Google Scholar searches
+* Add customization to the card. User-defined color for countries and font family and size
